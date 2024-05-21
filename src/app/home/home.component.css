@@ -1,0 +1,20 @@
+
+@media (max-width:600px) {
+   th{
+        font-size: 13px;
+        padding: 0px !important;
+        padding-right: 5px !important;
+    }
+    img{
+        width: 100px;
+    }
+}
+tr{
+    cursor: pointer;
+}
+
+
+.row-hover:hover {
+    border:1px solid rgb(14, 181, 117) !important ; 
+    transition: .3s;    cursor: pointer; /* Change cursor to indicate clickable */
+  }

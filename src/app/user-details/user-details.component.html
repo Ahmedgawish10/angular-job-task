@@ -1,0 +1,31 @@
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>avatar</th>
+            <th>email</th>
+
+            <th>First Name</th>
+            <th>Last Name</th>
+          </tr>
+        </thead>
+        <tbody>
+            <div class="mt-5"></div>
+          <tr *ngFor="let user of selecteUser">
+            <td class="align-middle">{{ user.id }}</td>
+            <td><img [src]='user.avatar' alt="" srcset=""></td>
+            <td class="align-middle">{{ user.email }}</td>
+            <td class="align-middle">{{ user.first_name }}</td>
+            <td class="align-middle"> {{ user.last_name }}</td>
+          </tr>
+        </tbody>
+      </table>
+    
+
+</div>
+<div class="text-center">
+
+    <button type="button" routerLink="/users" class="btn btn-dark ps-5 pe-5" >Back ←</button>
+
+</div>
